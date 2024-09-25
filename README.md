@@ -3,7 +3,7 @@
 
 ## Installation
 
-    cordova plugin add cordova-plugin-web-share --save
+    cordova plugin add https://github.com/roby65/cordova-plugin-web-share.git --save
 
 ## Supported Platforms
 
@@ -15,7 +15,7 @@
 Plugin polyfills stadards-based [Web Share API](https://wicg.github.io/web-share/) to trigger native platform-specific dialogs. The first argument in `navigator.share` is an options object, that might have `title`, `text` and `url` properties (all optional).
 
 ```js
-navigator.share({
+cordova.plugins.share({
     title: "Share topic",
     text: "Share message",
     url: "Share url"
