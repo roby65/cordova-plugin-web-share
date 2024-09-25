@@ -11,7 +11,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <issue>https://github.com/chemerisuk/cordova-plugin-web-share/issues</issue>
 
     <js-module src="www/WebShare.js" name="WebShare">
-        <clobbers target="window.navigator.share" />
+        <clobbers target="cordova.plugins.share" />
     </js-module>
 
     <engines>
